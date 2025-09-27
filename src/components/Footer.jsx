@@ -1,3 +1,6 @@
+import React from 'react';
+import monfrensLogo from '../assets/frenslogo.png'; // <-- replace with the MonFrens logo image path
+
 const Footer = () => {
   return (
     <footer className="bg-[#421C71] text-white py-12 px-8">
@@ -5,10 +8,19 @@ const Footer = () => {
         {/* Header Section */}
         <div className="mb-8">
           <div className="flex items-center mb-4">
-            <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mr-3">
-              <span className="text-white font-bold text-sm">🐵</span>
-            </div>
-            <h1 className="text-2xl font-bold">MonFrens</h1>
+            <img src={monfrensLogo} className="w-8 h-8 mr-3" alt="" />
+            <h1
+              className="text-2xl font-bold text-[#ff]"
+              style={{
+                color: '#fff',
+                textShadow: `-1px -1px 0 #FFAE00,
+                        1px -1px 0 #171616cb,
+                        -1px 1px 0 #171616cb,
+                        1px 1px 0 #FFAE00`,
+              }}
+            >
+              MonFrens
+            </h1>
           </div>
           <p className="text-gray-300 text-sm max-w-md">
             MonFrens is a social experiment within the Mondi ecosystem.
